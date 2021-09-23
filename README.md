@@ -12,7 +12,7 @@ The included scripts expect this repo to be cloned at `~` (resulting in `~/dotfi
 - i3 (pretty much default, use my Qtile config instead)
   - `i3 i3status i3lock`
 - Qtile
-  - `feh alacritty picom (jonaburg) rofi`
-	- AUR: `picom (jonaburg) nerd-fonts-fira-code oh-my-zsh`
+  - `feh alacritty rofi`
+	- AUR: `picom-jonaburg-git) nerd-fonts-fira-code oh-my-zsh`
 - Extra programs
   - `nitrogen ranger dunst redshift emacs (ripgrep fd) code` 
