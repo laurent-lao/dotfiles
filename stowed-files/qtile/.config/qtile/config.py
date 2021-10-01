@@ -37,7 +37,7 @@ from typing import List  # noqa: F401
 mod = "mod4"
 alt = "mod1"
 myTerm = "alacritty"
-myBrowser = "firefox-developer-edition"
+myBrowser = "firefox"
 myLauncher = "rofi -show run"
 myDLauncher = "rofi -show drun"
 myEditor = "emacs"
