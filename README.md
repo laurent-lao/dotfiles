@@ -9,8 +9,10 @@ The included scripts expect this repo to be cloned at `~` (resulting in `~/dotfi
 - Neovim
   - node, yum
 - 
-- i3 (pretty much default, use my Qtile config instead)
-  - `i3 i3status i3lock`
+- i3 
+  - `i3 i3status i3lock feh alacritty rofi xcwd polybar`
+	- Polybar setup using [polybar-themes](https://github.com/adi1090x/polybar-themes)
+	- AUR: `xcwd-git`
 - Qtile
   - `feh alacritty rofi`
 	- AUR: `picom-jonaburg-git) nerd-fonts-fira-code oh-my-zsh`
