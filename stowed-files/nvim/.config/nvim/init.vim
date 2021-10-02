@@ -75,7 +75,7 @@ set wildmenu " Finding files - displays all matching files when tab complete
 " setting leader key
 let mapleader="\<Space>"
 " setting insert mode escape
-inoremap jk <esc> " jk is escape
+inoremap jj <esc> " jj is escape
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
