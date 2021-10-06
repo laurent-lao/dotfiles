@@ -60,7 +60,7 @@ bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+Shift+Return exec --no-startup-id $term --working-directory $(xcwd)
 
 # kill focused window
-# bindsym $mod+Shift+q kill
+bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
