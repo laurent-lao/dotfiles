@@ -1,0 +1,5 @@
+name: Gruvbox Theme
+stylesheets:
+  - file: gruvbox-dark.scss
+    name: Gruvbox Dark
+    description: Gruvbox Dark Theme
