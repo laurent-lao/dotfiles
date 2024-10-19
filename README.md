@@ -14,4 +14,4 @@
 
 # Screenshot
 
-![](./assets/screenshots/hyprland.png)
+![](./.assets/screenshots/hyprland.png)
