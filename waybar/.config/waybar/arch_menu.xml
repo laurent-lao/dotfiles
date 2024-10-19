@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+    <child>
+      <object class="GtkMenuItem" id="vnc-display1">
+        <property name="label">VNC on DP-1</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="vnc-display2">
+        <property name="label">VNC on DP-2</property>
+      </object>
+    </child>
+    <!-- SEPARATOR -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter1" />
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="reload-waybar">
+        <property name="label">Reload Waybar</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="reload-hyprland">
+        <property name="label">Reload Hyprland</property>
+      </object>
+    </child>
+  </object>
+</interface>

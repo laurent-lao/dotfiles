@@ -1,0 +1,6 @@
+// Settings for Zeditor
+{
+  "file_types": {
+    "Shell Script": ["conf"]
+  }
+}
