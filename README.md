@@ -16,4 +16,5 @@ Gotta have those under versioning control.
 
 ## Screenshot
 
+### Hyprland
 ![](./.assets/screenshots/hyprland.png)
