@@ -1,6 +1,6 @@
 # dotfiles
 
-Gotta have those under versioning control.
+My dotfiles
 
 ## Usage
 
