@@ -4,7 +4,7 @@ size = 12
 
 [general]
 import = [
-  "~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"
+  "~/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 
 [window]
