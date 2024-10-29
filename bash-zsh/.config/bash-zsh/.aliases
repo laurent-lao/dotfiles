@@ -1,10 +1,20 @@
 #!/bin/bash
+# Author: laurent-lao
+# Definition of aliases for bash/zsh
 
+# Applications aliases
 alias hx=helix
 alias zed=zeditor
 alias timeshift-wayland="sudo -E timeshift-launcher"
 alias qutebrowser="sh ~/.config/bash-zsh/open_url_in_instance.sh"
 
-# Coloring for commands
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+# Git aliases
+alias ggs="git status"
+alias gga="git add"
+alias ggcc="EDITOR=helix git commit"
+alias ggcm="git commit -m"
+
+# Command aliases
+alias ls="ls --color=auto"
+alias ll="ls -alF --color=auto"
+alias grep="grep --color=auto"
