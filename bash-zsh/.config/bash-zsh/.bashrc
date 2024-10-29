@@ -21,3 +21,8 @@ eval "$(starship init bash)"
 
 # Define prompt manually
 # PS1='[\u@\h \W]\$ '
+
+# Show fastfetch on new shell
+fastfetch
+# fastfetch -c ~/.config/fastfetch/config-logo.jsonc
+# fastfetch -c ~/.config/fastfetch/config-table.jsonc
