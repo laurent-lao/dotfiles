@@ -2,3 +2,7 @@ alias hx=helix
 alias zed=zeditor
 alias timeshift-wayland="sudo -E timeshift-launcher"
 alias qutebrowser="sh ~/.config/bash-zsh/open_url_in_instance.sh"
+
+# Coloring for commands
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'

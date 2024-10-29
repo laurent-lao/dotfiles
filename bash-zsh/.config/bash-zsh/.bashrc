@@ -15,6 +15,4 @@ if [ -f ~/.config/bash-zsh/.envvars]; then
     . ~/.config/bash-zsh/.envvars
 fi
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '

@@ -13,8 +13,13 @@ if [ -f ~/.config/bash-zsh/.envvars ]; then
 fi
 
 # Use Starship prompt
-eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/bash-zsh/starship.toml
+eval "$(starship init zsh)"
+
+# History settings
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
 
 # Plugins installed through package manager
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
