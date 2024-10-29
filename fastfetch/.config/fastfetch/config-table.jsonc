@@ -1,0 +1,125 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": "none",
+  // "logo": {
+  //   "type": "small",
+  //   "padding": {
+  //     "top": 1,
+  //     "right": 2,
+  //   },
+  // },
+  "display": {
+    "separator": ">  ",
+    "color": {
+      "separator": "red",
+    },
+    "constants": [
+      "═══════════════════════════════════════════════════════════════════════════",
+      "║\u001b[75C║\u001b[75D",
+    ],
+  },
+  "modules": [
+    {
+      "format": "{#1}{#keys}╔{$1}╗",
+      "type": "custom",
+    },
+    {
+      "key": "{$2}{#31} user     ",
+      "type": "title",
+      "format": "{user-name}@{host-name}",
+    },
+    {
+      "key": "{$2}{#32}{icon} distro   ",
+      "type": "os",
+    },
+    {
+      "key": "{$2}{#33} kernel   ",
+      "type": "kernel",
+    },
+    {
+      "key": "{$2}{#34}󰅐 uptime   ",
+      "type": "uptime",
+    },
+    {
+      "key": "{$2}{#35}󰏖 packages ",
+      "type": "packages",
+    },
+    {
+      "key": "{$2}{#36} shell    ",
+      "type": "shell",
+    },
+    {
+      "key": "{$2}{#37}󰇄 desktop  ",
+      "type": "de",
+    },
+    {
+      "key": "{$2}{#37}󰇄 window   ",
+      "type": "wm",
+    },
+    {
+      "key": "{$2}{#31}󰉼 theme    ",
+      "type": "theme",
+    },
+    {
+      "key": "{$2}{#32} icons    ",
+      "type": "icons",
+    },
+    {
+      "key": "{$2}{#33} term     ",
+      "type": "terminal",
+    },
+    {
+      "key": "{$2}{#34}󰌢 host     ",
+      "type": "host",
+    },
+    {
+      "key": "{$2}{#35}󰍛 cpu      ",
+      "type": "cpu",
+      "showPeCoreCount": true,
+      "temp": true,
+    },
+    {
+      "key": "{$2}{#36}󰍛 gpu      ",
+      "type": "gpu",
+    },
+    {
+      "key": "{$2}{#37}󰉉 disk     ",
+      "type": "disk",
+      "folders": "/",
+    },
+    {
+      "key": "{$2}{#31} memory   ",
+      "type": "memory",
+    },
+    {
+      "key": "{$2}{#32}󰓡 swap     ",
+      "type": "swap",
+    },
+    {
+      "key": "{$2}{#33}󰩟 local    ",
+      "type": "localip",
+      "format": "{ipv4} ({ifname})",
+    },
+    {
+      "key": "{$2}{#34}󰩠 public   ",
+      "type": "publicip",
+    },
+    {
+      "key": "{$2}{#35}󰍹 screen   ",
+      "type": "display",
+    },
+    {
+      "format": "{#1}{#keys}╠{$1}╣",
+      "type": "custom",
+    },
+    {
+      "key": "{$2}{#39} colors   ",
+      "type": "colors",
+      "symbol": "circle",
+    },
+    {
+      "format": "{#1}{#keys}╚{$1}╝",
+      "type": "custom",
+    },
+  ],
+}
