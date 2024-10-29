@@ -13,13 +13,14 @@ if [ -f ~/.config/bash-zsh/.envvars ]; then
 fi
 
 # Use Starship prompt
-export STARSHIP_CONFIG=~/.config/bash-zsh/starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # History settings
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+setopt HIST_IGNORE_ALL_DUPS
 
 # Plugins installed through package manager
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -27,3 +28,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Show fastfetch on new shell
 fastfetch
+# fastfetch -c ~/.config/fastfetch/config-logo.jsonc
+# fastfetch -c ~/.config/fastfetch/config-table.jsonc

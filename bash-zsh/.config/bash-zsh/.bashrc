@@ -16,7 +16,7 @@ if [ -f ~/.config/bash-zsh/.envvars]; then
 fi
 
 # Use Starship prompt
-export STARSHIP_CONFIG=~/.config/bash-zsh/starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init bash)"
 
 # Define prompt manually
