@@ -15,4 +15,9 @@ if [ -f ~/.config/bash-zsh/.envvars]; then
     . ~/.config/bash-zsh/.envvars
 fi
 
-PS1='[\u@\h \W]\$ '
+# Use Starship prompt
+export STARSHIP_CONFIG=~/.config/bash-zsh/starship.toml
+eval "$(starship init bash)"
+
+# Define prompt manually
+# PS1='[\u@\h \W]\$ '
