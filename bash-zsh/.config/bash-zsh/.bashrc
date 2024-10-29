@@ -11,7 +11,7 @@ if [ -f ~/.config/bash-zsh/.aliases ]; then
 fi
 
 # Set environment variables for bash/zsh
-if [ -f ~/.config/bash-zsh/.envvars]; then
+if [ -f ~/.config/bash-zsh/.envvars ]; then
     . ~/.config/bash-zsh/.envvars
 fi
 
