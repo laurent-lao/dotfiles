@@ -20,4 +20,4 @@ My dotfiles
 ![](./.assets/screenshots/hyprland.png)
 
 #### Waybar mpd shortcuts
-![](./assets/screenshots/mpd-menu.png)
+![](./.assets/screenshots/mpd-menu.png)
