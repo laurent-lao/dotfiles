@@ -18,3 +18,6 @@ My dotfiles
 
 ### Hyprland
 ![](./.assets/screenshots/hyprland.png)
+
+#### Waybar mpd shortcuts
+![](./assets/screenshots/mpd-menu.png)
