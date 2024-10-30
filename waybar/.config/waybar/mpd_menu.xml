@@ -12,6 +12,11 @@
       </object>
     </child>
     <child>
+      <object class="GtkMenuItem" id="play-recent-album">
+        <property name="label">Play recently added</property>
+      </object>
+    </child>
+    <child>
       <object class="GtkMenuItem" id="play-genre">
         <property name="label">Play genre</property>
       </object>
