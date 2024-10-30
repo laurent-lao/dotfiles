@@ -407,7 +407,7 @@
 #
 #lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
 #
-#follow_now_playing_lyrics = no
+follow_now_playing_lyrics = yes
 #
 #fetch_lyrics_for_current_song_in_background = no
 #
@@ -471,7 +471,7 @@
 #
 #display_volume_level = yes
 #
-#display_bitrate = no
+display_bitrate = yes
 #
 #display_remaining_time = no
 #
@@ -498,7 +498,7 @@
 #
 #mouse_list_scroll_whole_page = no
 #
-#lines_scrolled = 5
+lines_scrolled = 1
 #
 #empty_tag_marker = <empty>
 #
@@ -526,7 +526,7 @@
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
+external_editor = nvim
 #
 ## Note: set to yes if external editor is a console application.
 ##
