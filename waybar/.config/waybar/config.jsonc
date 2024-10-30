@@ -15,7 +15,6 @@
         "custom/arch",
         "hyprland/workspaces",
         "hyprland/window"
-        // "mpd"
     ],
     // "modules-center": [
     //     "hyprland/workspaces"
@@ -23,6 +22,7 @@
     "modules-right": [
         "tray",
         // "idle_inhibitor",
+        "mpd",
         "custom/media",
         "pulseaudio",
         "network",
@@ -98,9 +98,11 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format": "{stateIcon} {artist} - {title}",
+        "format-disconnected": "",
+        "format-stopped": "",
+        // "format-disconnected": "Disconnected ",
+        // "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
@@ -120,8 +122,9 @@
             "paused": "",
             "playing": ""
         },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
+        "tooltip-format": "{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ Volume: {volume}%  ",
+        // "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": ""
     },
     "idle_inhibitor": {
         "format": "{icon}",
