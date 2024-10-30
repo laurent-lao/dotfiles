@@ -98,11 +98,13 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {artist} - {title}",
+        "format": "{stateIcon} {title} - {artist}",
+        // "format": "{stateIcon} {artist} - {title}",
         "format-disconnected": "",
         "format-stopped": "",
         // "format-disconnected": "Disconnected ",
         // "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "max-length": 20,
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
@@ -122,12 +124,28 @@
             "paused": "",
             "playing": ""
         },
-        "tooltip-format": "{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ Volume: {volume}%  ",
+        "tooltip-format": "{title} - {artist} - {album} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ Volume: {volume}%  ",
+        // "tooltip-format": "{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ Volume: {volume}%  ",
         // "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "",
+        "menu": "on-click-right",
+        "menu-file": "$HOME/.config/waybar/mpd_menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "play-genre":          "mpc clear; selected_genre=$(mpc list genre | rofi -dmenu -p 'Choose genre:') && [ -n \"$selected_genre\" ] && mpc findadd genre \"$selected_genre\" && mpc play",
+            "play-random-album":   "mpc clear; mpc list album | shuf -n 1 | xargs -I{} mpc findadd album \"{}\"; mpc play",
+            "play-random-hundred": "mpc clear; mpc listall | shuf -n 100 | mpc add; mpc play",
+            "shuffle-genre":          "mpc clear; selected_genre=$(mpc list genre | rofi -dmenu -p 'Choose genre:') && [ -n \"$selected_genre\" ] && mpc findadd genre \"$selected_genre\" && mpc shuffle && mpc play",
+            "shuffle-library":     "mpc clear && mpc add / && mpc shuffle && mpc play",
+            // Need to disown when launching from menu-actions otherwise Waybar locks up until the window is killed
+            "show-browser":        "nohup alacritty -e ncmpcpp -s browser > /dev/null 2>&1 & disown",
+            "show-cover":          "nohup kitty -e rmpc > /dev/null 2>&1 & disown",
+            "show-lyrics":         "nohup alacritty -e ncmpcpp -s lyrics > /dev/null 2>&1 & disown",
+            "show-visualizer":     "nohup alacritty -e ncmpcpp -s visualizer > /dev/null 2>&1 & disown"
+        },
         "on-click": "alacritty -e ncmpcpp",
         "on-click-middle": "mpc toggle",
-        "on-click-right": "alacritty -e ncmpcpp -s browser",
+        "on-click-right": "", // Shuffle all songs
+        // "on-click-right": "alacritty -e ncmpcpp -s browser",
         "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
         "on-scroll-up": "mpc next",
         "on-scroll-down": "mpc prev",
@@ -261,6 +279,7 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/arch_menu.xml",
         "menu-actions": {
+            // Need to disown when launching from menu-actions otherwise Waybar locks up until the process to be executed is killed
             "vnc-display1": "pkill wayvnc; nohup wayvnc -Lquiet -o DP-1 --config /wayvnc/config > /dev/null 2>&1 & disown",
             "vnc-display2": "pkill wayvnc; nohup wayvnc -Lquiet -o DP-2 --config /wayvnc/config > /dev/null 2>&1 & disown",
             "reload-waybar": "killall -SIGUSR2 waybar",

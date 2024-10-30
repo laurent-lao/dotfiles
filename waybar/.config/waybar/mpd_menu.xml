@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+    <child>
+      <object class="GtkMenuItem" id="play-random-album">
+        <property name="label">Play random album</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="play-random-hundred">
+        <property name="label">Play random 100 songs</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="play-genre">
+        <property name="label">Play genre</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="shuffle-genre">
+        <property name="label">Shuffle genre</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="shuffle-library">
+        <property name="label">Shuffle full library</property>
+      </object>
+    </child>
+    <!-- SEPARATOR -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter1" />
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="show-browser">
+        <property name="label">Show browser</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="show-lyrics">
+        <property name="label">Show lyrics</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="show-visualizer">
+        <property name="label">Show visualizer</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="show-cover">
+        <property name="label">Show cover art</property>
+      </object>
+    </child>
+  </object>
+</interface>
