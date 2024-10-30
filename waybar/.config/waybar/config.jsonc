@@ -124,7 +124,14 @@
         },
         "tooltip-format": "{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ Volume: {volume}%  ",
         // "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": ""
+        "tooltip-format-disconnected": "",
+        "on-click": "alacritty -e ncmpcpp",
+        "on-click-middle": "mpc toggle",
+        "on-click-right": "alacritty -e ncmpcpp -s browser",
+        "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+        "on-scroll-up": "mpc next",
+        "on-scroll-down": "mpc prev",
+        
     },
     "idle_inhibitor": {
         "format": "{icon}",
