@@ -66,10 +66,12 @@ class PlayerManager:
 
     def write_output(self, text, player):
         logger.debug(f"Writing output: {text}")
-
-        output = {"text": text,
-                  "class": "custom-" + player.props.player_name,
-                  "alt": player.props.player_name}
+        if player.props.player_name == "mpd":
+            output = {"text": "", "class": "custom-mpd", "alt": "mpd"}
+        else:
+            output = {"text": text,
+                    "class": "custom-" + player.props.player_name,
+                    "alt": player.props.player_name}
 
         sys.stdout.write(json.dumps(output) + "\n")
         sys.stdout.flush()
@@ -89,7 +91,7 @@ class PlayerManager:
             # if any are playing, show the first one that is playing
             # reverse order, so that the most recently added ones are preferred
             for player in players[::-1]:
-                if player.props.status == "Playing":
+                if player.props.status == "Playing" and player.props.player_name != "mpd":
                     return player
             # if none are playing, show the first one
             return players[0]
