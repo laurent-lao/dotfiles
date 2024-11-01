@@ -19,6 +19,12 @@ alias ggpl="git pull"
 alias ggb="git branch"
 alias ggco="git checkout"
 
+# Music aliases
+# Play random album
+alias mpcp="mpc clear; mpc list album | shuf -n 1 | xargs -I{} mpc findadd album \"{}\"; mpc play"
+# Play random 100 songs
+alias mpcpp="mpc clear; mpc listall | shuf -n 100 | mpc add; mpc play"
+
 # Command aliases
 alias ls="ls --color=auto"
 alias ll="ls -alF --color=auto"
