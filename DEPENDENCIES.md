@@ -18,9 +18,9 @@ firefox qutebrowser librewolf-bin google-chrome-stable
 
 arrpc brightnessctl cliphist wl-clipboard
 
-ffmpeg pipewire pipewire-alsa pipewire-jack pipewire-pulse pavucontrol helvum iptvnator mpv vlc obs-studio plex plexamp-appimage cava wolf-spectrum
+ffmpeg pipewire pipewire-alsa pipewire-jack pipewire-pulse pavucontrol helvum iptvnator mpv vlc obs-studio plex plexamp-appimage cava wolf-spectrum lowfi
 
-nautilus
+ranger lf nautilus dolphin
 
 zed visual-studio-code-bin
 
