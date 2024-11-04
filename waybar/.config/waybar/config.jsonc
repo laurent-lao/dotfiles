@@ -133,6 +133,7 @@
       "show-cover": "nohup kitty -e rmpc > /dev/null 2>&1 & disown",
       "show-lyrics": "nohup alacritty -e ncmpcpp -s lyrics > /dev/null 2>&1 & disown",
       "show-visualizer": "nohup alacritty -e ncmpcpp -s visualizer > /dev/null 2>&1 & disown",
+      "stop-mpd": "mpc stop"
     },
     "on-click": "alacritty -e ncmpcpp",
     "on-click-middle": "mpc toggle",

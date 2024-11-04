@@ -55,5 +55,14 @@
         <property name="label">Show cover art</property>
       </object>
     </child>
+    <!-- SEPARATOR -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter2" />
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="stop-mpd">
+        <property name="label">Stop mpd</property>
+      </object>
+    </child>
   </object>
 </interface>
