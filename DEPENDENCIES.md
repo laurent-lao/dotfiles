@@ -4,9 +4,9 @@
 
 grub os-prober
 
-git base-devel yay paru mandoc stow timeshift tailscale
+git base-devel yay paru mandoc tldr informant stow timeshift tailscale
 
-alacritty kitty foot tmux
+alacritty kitty foot tmux skim (or fzf)
 
 dunst fastfetch feh rofi wofi htop nvtop networkmanager network-manager-applet
 
@@ -18,7 +18,7 @@ firefox qutebrowser librewolf-bin google-chrome-stable
 
 arrpc brightnessctl cliphist wl-clipboard
 
-ffmpeg pipewire pipewire-alsa pipewire-jack pipewire-pulse pavucontrol helvum iptvnator mpv vlc obs-studio plexamp-appimage wolf-spectrum
+ffmpeg pipewire pipewire-alsa pipewire-jack pipewire-pulse pavucontrol helvum iptvnator mpv vlc obs-studio plex plexamp-appimage cava wolf-spectrum
 
 nautilus
 
@@ -34,9 +34,9 @@ samba gvfs-smb smbclient
 
 ## For mpd
 
-mpd mpc ncmpcpp rmpc
+mpd mpc ncmpcpp rmpc 
 
-mpDris2 python-mutagen
+mpDris2 playerctl python-mutagen
 
 mpdscribble mpd-discord-rpc
 
