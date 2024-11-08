@@ -8,11 +8,13 @@ git base-devel yay paru mandoc tldr informant stow timeshift tailscale
 
 alacritty kitty foot tmux skim (or fzf)
 
-dunst fastfetch feh rofi wofi htop nvtop networkmanager network-manager-applet
+dunst fastfetch feh rofi wofi networkmanager network-manager-applet
+
+htop btop nvtop radeontop
 
 helix neovim vim less nano
 
-ttf-firacode-nerd
+ttf-jetbrains-mono-nerd ttf-firacode-nerd
 
 firefox qutebrowser librewolf-bin google-chrome-stable
 
@@ -68,7 +70,7 @@ gnome gnome-extra gnome-tweaks xdg-desktop-portal-gnome
 
 ## Hyprland
 
-hyprland hyprshot hyprpicker dunst xdg_desktop-portal-hyprland qt5-wayland qt6-wayland polkit-kde-agent waybar wttrbar
+hyprland hyprshot hyprpicker hyprsunset dunst xdg_desktop-portal-hyprland qt5-wayland qt6-wayland polkit-kde-agent waybar wttrbar
 
 swww
 
