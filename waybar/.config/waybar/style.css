@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "FiraCode Nerd Font", FontAwesome, Roboto, Helvetica, Arial,
+    font-family: /*"FiraCode Nerd Font",*/ "JetBrainsMono Nerd Font", /*"Font Awesome 6 Brands",*/ Roboto, Helvetica, Arial,
         sans-serif;
     font-size: 14px;
     font-weight: normal;
