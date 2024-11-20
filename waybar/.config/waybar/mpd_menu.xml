@@ -26,14 +26,30 @@
         <property name="label">Shuffle genre</property>
       </object>
     </child>
+    <!-- SEPARATOR -->
+    <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter1" />
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="beets-open">
+        <property name="label">Connect to beets</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="beets-liked">
+        <property name="label">Add to Liked</property>
+      </object>
+    </child>
+    <!--
     <child>
       <object class="GtkMenuItem" id="shuffle-library">
         <property name="label">Shuffle full library</property>
       </object>
     </child>
+    -->
     <!-- SEPARATOR -->
     <child>
-      <object class="GtkSeparatorMenuItem" id="delimiter1" />
+      <object class="GtkSeparatorMenuItem" id="delimiter2" />
     </child>
     <child>
       <object class="GtkMenuItem" id="show-browser">
@@ -57,7 +73,7 @@
     </child>
     <!-- SEPARATOR -->
     <child>
-      <object class="GtkSeparatorMenuItem" id="delimiter2" />
+      <object class="GtkSeparatorMenuItem" id="delimiter3" />
     </child>
     <child>
       <object class="GtkMenuItem" id="stop-mpd">

@@ -85,13 +85,14 @@ class PlayerManager:
         self.on_metadata_changed(player, player.props.metadata)
 
     def get_first_playing_player(self):
+        ignore_players = ["mpd", "dog"] # List of players to ignore
         players = self.get_players()
         logger.debug(f"Getting first playing player from {len(players)} players")
         if len(players) > 0:
             # if any are playing, show the first one that is playing
             # reverse order, so that the most recently added ones are preferred
             for player in players[::-1]:
-                if player.props.status == "Playing" and player.props.player_name != "mpd":
+                if player.props.status == "Playing" and player.props.player_name not in ignore_players:
                     return player
             # if none are playing, show the first one
             return players[0]

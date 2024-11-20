@@ -127,12 +127,14 @@
       // Define $BEETS_SERVER_IP in secret_beets_server.conf
       "play-recent-album": ". ~/.config/waybar/secret_beets_server.conf && selected_album=$(curl -s $BEETS_SERVER_IP/album/query/added:-4w.. | jq -r '.results | sort_by(-.added)[] | \"\\(.albumartist) - \\(.album)\"' | rofi -dmenu -p 'Select album:' | awk -F ' - ' '{print $2}') && mpc clear && mpc findadd album \"$selected_album\" && mpc play",
       "shuffle-genre": "selected_genre=$(mpc list genre | rofi -dmenu -p 'Choose genre:') && [ -n \"$selected_genre\" ] && mpc clear && mpc findadd genre \"$selected_genre\" && mpc shuffle && mpc play",
-      "shuffle-library": "mpc clear && mpc add / && mpc shuffle && mpc play",
+      "shuffle-library": "mpc clear && mpc add / && mpc shuffle && mpc play", // doesnt work if the library is too big
       // Need to disown when launching from menu-actions otherwise Waybar locks up until the window is killed
       "show-browser": "nohup alacritty -e ncmpcpp -s browser > /dev/null 2>&1 & disown",
       "show-cover": "nohup kitty -e rmpc > /dev/null 2>&1 & disown",
       "show-lyrics": "nohup alacritty -e ncmpcpp -s lyrics > /dev/null 2>&1 & disown",
       "show-visualizer": "nohup alacritty -e ncmpcpp -s visualizer > /dev/null 2>&1 & disown",
+      "beets-open": "nohup kitty -e ~/.config/waybar/beets-tagger/beets_open.sh > /dev/null 2>&1 & disown",
+      "beets-liked": "nohup kitty -e ~/.config/waybar/beets-tagger/tag_liked.sh > /dev/null 2>&1 & disown",
       "stop-mpd": "mpc stop"
     },
     "on-click": "alacritty -e ncmpcpp",
