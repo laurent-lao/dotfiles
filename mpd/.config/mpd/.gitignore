@@ -1,4 +1,5 @@
 music_directory.conf
 database
 log
+state
 playlists/
