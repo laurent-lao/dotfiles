@@ -299,6 +299,14 @@ label:focus {
     background-color: #cc241d;
 }
 
+#temperature.gpu {
+    background-color: #665c54;
+}
+
+#temperature.gpu.critical {
+    background-color: #cc241d;
+}
+
 #tray {
     /* background-color: #665c54; */
     background-color: transparent;
