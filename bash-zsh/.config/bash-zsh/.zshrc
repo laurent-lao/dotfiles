@@ -2,6 +2,9 @@
 # Add this line to ~/.zshrc
 # source ~/.config/bash-zsh/.zshrc
 
+# Set Bitwarden SSH-AGENT
+export SSH_AUTH_SOCK=/Users/laurent/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+
 # Set aliases for bash/zsh
 if [ -f ~/.config/bash-zsh/.aliases ]; then
     . ~/.config/bash-zsh/.aliases
