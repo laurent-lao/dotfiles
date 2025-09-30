@@ -2,9 +2,6 @@
 # Add this line to ~/.zshrc
 # source ~/.config/bash-zsh/.zshrc
 
-# Set Bitwarden SSH-AGENT
-export SSH_AUTH_SOCK=/Users/laurent/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
-
 # Set aliases for bash/zsh
 if [ -f ~/.config/bash-zsh/.aliases ]; then
     . ~/.config/bash-zsh/.aliases
@@ -26,8 +23,9 @@ SAVEHIST=10000
 setopt HIST_IGNORE_ALL_DUPS
 
 # Plugins installed through package manager
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Show fastfetch on new shell
 fastfetch
