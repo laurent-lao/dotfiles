@@ -76,6 +76,8 @@ local browser = "firefox"
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+-- Unified theme with KDE
+hl.env("QT_QPA_PLATFORMTHEME", "kde")
 
 
 -----------------------
