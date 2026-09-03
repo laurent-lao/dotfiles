@@ -3,5 +3,5 @@ return {
   { "ellisonleao/gruvbox.nvim"},
   { "sainnhe/gruvbox-material" },
   -- Copilot
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
 }
