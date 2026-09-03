@@ -26,7 +26,8 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = "auto",
+    -- scale    = "auto",
+    scale    = "1.20",
 })
 
 
@@ -58,10 +59,13 @@ local browser = "firefox"
 -- end)
 
 
- hl.on("hyprland.start", function () 
+ hl.on("hyprland.start", function ()
+   hl.exec_cmd("/usr/lib/polkit-kde-authentification-agent-1")
+   hl.exec_cmd("/usr/lib/pam_kwallet_init & kwalletd6")
    hl.exec_cmd(terminal)
    hl.exec_cmd("nm-applet")
-   hl.exec_cmd("waybar & firefox")
+   hl.exec_cmd("hypridle")
+   hl.exec_cmd("waybar & awww-daemon")
  end)
 
 -------------------------------
@@ -106,7 +110,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
+            -- active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
+            active_border   = { colors = {"rgba(d79921ee)", "rgba(d65d0eee)"}, angle = 45 },
             inactive_border = "rgba(595959aa)",
         },
 
@@ -273,7 +278,8 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + SHIFT + " .. "Return", hl.dsp.exec_cmd(browser))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
