@@ -194,18 +194,18 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
+    background-color: #cc241d;
     color: #ebdbb2;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
+    background-color: #458588;
     color: #ebdbb2;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #689d6a;
+    color: #ebdbb2;
 }
 
 label:focus {
