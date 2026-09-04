@@ -1,2 +1,0 @@
-mopidy-mpd
-mopidy-local
