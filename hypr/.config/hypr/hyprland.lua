@@ -26,7 +26,7 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    -- scale    = "auto",
+    --scale    = "auto",
     scale    = "1.20",
 })
 
@@ -38,9 +38,18 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu = "rofi -show drun -show-icons -replace -i"
 local browser = "firefox"
--- local menu = "wofi --show drun"
+
+-- Menus
+local menu = "rofi -show drun -show-icons -replace -i"
+local menubin = "rofi -show run -replace -i"
+local menualt = "wofi --show drun"
+
+-- Utilities
+
+local clipboardRecall  = "cliphist list | rofi -dmenu -p 'Recall clipboard item' | cliphist decode | wl-copy"
+local clipboardDelete  = "cliphist list | rofi -dmenu -p 'Delete clipboard item (or exec cliphist wipe)' | cliphist delete"
+
 
 
 -------------------
@@ -62,6 +71,8 @@ local browser = "firefox"
  hl.on("hyprland.start", function ()
    hl.exec_cmd("/usr/lib/polkit-kde-authentification-agent-1")
    hl.exec_cmd("/usr/lib/pam_kwallet_init & kwalletd6")
+   hl.exec_cmd("wl-paste --type text --watch cliphist store")
+   hl.exec_cmd("wl-paste --type image --watch cliphist store")
    hl.exec_cmd(terminal)
    hl.exec_cmd("nm-applet")
    hl.exec_cmd("hypridle")
@@ -279,15 +290,19 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + SHIFT + " .. "Return", hl.dsp.exec_cmd(browser))
-local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboardRecall))
+
+-- Views
+hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
