@@ -75,6 +75,7 @@ local clipboardDelete  = "cliphist list | rofi -dmenu -p 'Delete clipboard item 
    hl.exec_cmd("wl-paste --type image --watch cliphist store")
    hl.exec_cmd(terminal)
    hl.exec_cmd("nm-applet")
+   hl.exec_cmd("blueman-applet")
    hl.exec_cmd("hypridle")
    hl.exec_cmd("hyprsunset")
    hl.exec_cmd("waybar & awww-daemon")
