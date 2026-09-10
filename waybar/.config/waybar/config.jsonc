@@ -11,7 +11,7 @@
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["custom/arch", "group/hardware", "hyprland/workspaces", "niri/workspaces", "hyprland/window", "niri/window"],
   // "modules-center": [
   //     "hyprland/workspaces"
   // ],
@@ -292,8 +292,8 @@
     "menu": "on-click",
     "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
     "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
+      "shutdown": "shutdown now",
+      "reboot": "reboot now",
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate",
       "logout": "hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'",
