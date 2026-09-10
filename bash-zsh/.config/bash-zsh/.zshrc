@@ -27,6 +27,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Show fastfetch on new shell
-fastfetch
+# fastfetch
 # fastfetch -c ~/.config/fastfetch/config-logo.jsonc
 # fastfetch -c ~/.config/fastfetch/config-table.jsonc
