@@ -30,3 +30,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # fastfetch
 # fastfetch -c ~/.config/fastfetch/config-logo.jsonc
 # fastfetch -c ~/.config/fastfetch/config-table.jsonc
+
+# Update Window title to current dir
+precmd() {
+  print -Pn "\e]0;%~\a"
+}
+
+
