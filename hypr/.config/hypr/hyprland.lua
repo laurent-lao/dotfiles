@@ -392,7 +392,15 @@ hl.window_rule({
 hl.window_rule({
     name  = "move-hyprland-run",
     match = { class = "hyprland-run" },
-
     move  = "20 monitor_h-120",
     float = true,
+})
+
+-- Make Noctalia bar transparent
+hl.layer_rule({
+    name = "noctalia",
+    match = { namespace = "noctalia-bar-default" },
+    blur = false,
+    blur_popups = true,
+    ignore_alpha = 0.0
 })
