@@ -1,7 +1,7 @@
 [font]
 normal = {family = "JetbrainsMono Nerd Font", style = "Regular"}
 # normal = {family = "FiraCode Nerd Font Mono", style = "Regular"}
-size = 12
+size = 10
 
 [general]
 import = [
