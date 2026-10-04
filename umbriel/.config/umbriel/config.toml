@@ -136,8 +136,11 @@ numlock_toggle = true
 "Mod+E" = { action = "spawn:dolphin", repeat = false }
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+W" = { action = "window-close", repeat = false }
+"Mod+Ctrl+Alt+L" = "spawn:noctalia msg session lock"
 "Mod+Shift+M" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+"F9" = { action = "spawn:voxtype record toggle", repeat = false }
 
 # Focus and movement
 "Mod+Left" = "window-focus-left"
@@ -211,6 +214,7 @@ numlock_toggle = true
 "Mod+S" = "scratchpad-toggle"
 "Mod+Ctrl+S" = { action = "window-restore-from-scratchpad", repeat = false }
 "Mod+Tab" = "scratchpad-focus-next"
+
 
 # ==============================================================================
 # Layout
