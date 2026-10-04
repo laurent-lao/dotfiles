@@ -133,6 +133,7 @@ numlock_toggle = true
 # Applications and session
 "Mod+Return" = { action = "spawn:alacritty", repeat = false }
 "Mod+Shift+Return" = { action = "spawn:firefox", repeat = false }
+"Mod+E" = { action = "spawn:dolphin", repeat = false }
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+W" = { action = "window-close", repeat = false }
 "Mod+Shift+M" = "session-quit"
@@ -196,6 +197,14 @@ numlock_toggle = true
 "Mod+Shift+7" = "window-move-to-workspace:7"
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
+
+# Multiple Monitors
+"Mod+Ctrl+Left" = "output-focus-left"
+"Mod+Ctrl+Right" = "output-focus-right"
+"Mod+Ctrl+H" = "output-focus-left"
+"Mod+Ctrl+L" = "output-focus-right"
+"Mod+Shift+Ctrl+Left" = "window-move-to-output-left"
+"Mod+Shift+Ctrl+Right" = "window-move-to-output-right"
 
 # Scratchpad
 "Mod+Shift+S" = { action = "window-move-to-scratchpad", repeat = false }
