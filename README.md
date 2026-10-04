@@ -1,6 +1,8 @@
 # dotfiles
 
-My dotfiles
+My dotfiles for Linux
+
+Other operating systems are on their own branch.
 
 ## Usage
 
