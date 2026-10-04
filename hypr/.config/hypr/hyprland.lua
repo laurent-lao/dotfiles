@@ -27,7 +27,7 @@ hl.monitor({
     mode     = "preferred",
     position = "auto",
     --scale    = "auto",
-    scale    = "1.20",
+    --scale    = "1.25",
 })
 
 
