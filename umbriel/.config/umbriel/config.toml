@@ -138,7 +138,9 @@ numlock_toggle = true
 "Mod+W" = { action = "window-close", repeat = false }
 "Mod+Ctrl+Alt+L" = "spawn:noctalia msg session lock"
 "Mod+Shift+M" = "session-quit"
-"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+# "Mod+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+Escape" = { action = "submap:inhibit", repeat = false }
+"Mod+Shift+Escape" = { action = "submap:reset", repeat = false }
 
 "F9" = { action = "spawn:voxtype record toggle", repeat = false }
 
