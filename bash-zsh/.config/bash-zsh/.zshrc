@@ -1,6 +1,8 @@
 # Author: laurent-lao
 # Add this line to ~/.zshrc
 # source ~/.config/bash-zsh/.zshrc
+# or execute
+# echo 'source ~/.config/bash-zsh/.zshrc' > ~/.zshrc
 
 # Set aliases for bash/zsh
 if [ -f ~/.config/bash-zsh/.aliases ]; then
@@ -31,3 +33,6 @@ source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 fastfetch
 # fastfetch -c ~/.config/fastfetch/config-logo.jsonc
 # fastfetch -c ~/.config/fastfetch/config-table.jsonc
+
+# Tailscale alias
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
