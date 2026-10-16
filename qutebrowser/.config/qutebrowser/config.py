@@ -21,4 +21,4 @@ config.set("colors.webpage.darkmode.enabled", True) #always
 
 # Set Custom keybindings
 config.bind(',v', 'spawn mpv {url}')
-config.bind(',.', 'spawn --userscript qute-1pass')
+# config.bind(',.', 'spawn --userscript qute-1pass')
